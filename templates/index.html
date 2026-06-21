@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kannada Subtitle Generator</title>
+
+    <!-- CONNECT CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>🎬 Kannada Subtitle Generator</h2>
+
+        <form method="POST" enctype="multipart/form-data">
+            <input type="file" name="video" required>
+            <button type="submit">Generate Subtitles</button>
+        </form>
+
+        {% if done %}
+            <div class="progress">
+                <div class="progress-bar"></div>
+            </div>
+
+            <p class="success">Subtitle generation complete!</p>
+
+            <div class="links">
+                <a href="/download">⬇ Download SRT</a>
+            </div>
+        {% endif %}
+    </div>
+
+</body>
+</html>
