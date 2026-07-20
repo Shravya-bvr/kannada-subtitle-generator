@@ -29,3 +29,6 @@ python app.py
 ## Output
 - Kannada `.srt` subtitle file
 - Auto-opens in VLC with subtitles rendered correctly
+
+## 🎥 Demo
+👉 [Watch Demo on YouTube](https://youtu.be/tYCEX7OZUVg)
